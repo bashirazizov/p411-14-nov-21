@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.clear-fix{
+    clear: both;
+}
+
+#navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:black;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+}
+
+#navbar .logo{
+    width: 150px;
+}
+@media screen and (max-width:768px) {
+    #navbar .logo{
+        margin: auto;
+        display: block;
+        width: 70px;
+    }
+}
+#navbar .menu li{
+    display: inline-block;
+}
+#navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 25px;
+    display: inline-block;
+}
+@media screen and (max-width:768px) {
+    #navbar .menu li a{
+        margin: 5px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+#banner{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding-top: 35vh;
+}
+
+#banner h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 150px;
+}
+
+#banner p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:768px) {
+    #banner{
+        text-align: center;
+    }
+    #banner h1{
+        font-size: 50px;
+    }
+    #banner p {
+        font-size: 30px;
+    }
+}
+#banner a{
+    background-color:#D00000;
+    padding:10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all .3s ease;    
+}
+#banner a:hover{
+    background-color: white;
+    color: #D00000;
+}
+#about{
+    background-color:black;
+    padding-top:150px;
+    padding-bottom:150px;
+}
+#about img{
+    width: 100%;
+    border-radius: 10px;
+}
+#about h2{
+    color:white;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+#about  p{
+    color:white;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+#about .right{
+    padding-left: 50px;
+}
+@media screen and (max-width:768px) {
+    #about{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #about .right{
+        padding-left: 0px;
+    }
+}
+
+#albums{
+    background-color:black;
+    padding-top:150px;
+    padding-bottom:150px;
+}
+#albums h2{
+    color: white;
+    margin-bottom: 50px;
+}
+#albums .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#albums .albums .album{
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .3s ease;
+    cursor: pointer;
+    width: 400px;
+}
+#albums .albums .album:hover{
+    box-shadow: 0px 0px 60px 7px white;
+    transform: scale(1.05);
+}
+#albums .albums .album img{
+    width: 100%;
+    border-radius: 10px;
+}
+#albums .albums .album p{
+    font-size: 20px;
+    margin: 20px 0px 20px 10px;
+}
+#albums .albums .album p.price{
+    color: #D00000;
+    font-size:30px;
+    font-weight: bolder;
+}
+@media screen and (max-width:1300px) {
+    #albums .albums .album{
+        width: 300px;
+    }
+}
+@media screen and (max-width:900px) {
+    #albums .albums .album{
+        width: 400px;
+    }
+}
+@media screen and (max-width:768px) {
+    #albums .albums .album{
+        width: 100%;
+    }
+    #albums{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #albums h2{
+        margin-bottom: 30px;
+    }
+}
+#contact{
+    background-color:black;
+    padding-top:150px;
+    padding-bottom:150px;
+}
+
+#contact h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#contact .mail {
+    margin-bottom: 50px;
+}
+#contact .mail a{
+    color: #D00000;
+    font-size:25px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+#contact input{
+    padding:15px 20px;
+    font-size: 20px;
+    border:none;
+    background-color:#575757;
+    border-radius: 5px;
+    float: left;
+    width: 49%;
+    outline: none!important;
+    color: white;
+    margin-bottom: 30px;
+}
+#contact input.name{
+    margin-right: 1%;
+}
+#contact input.email{
+    margin-left: 1%;
+}
+
+#contact textarea{
+    padding:15px 20px;
+    font-size: 20px;
+    border:none;
+    background-color:#575757;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    outline: none!important;
+    color: white;
+    margin-bottom: 30px;
+}
+#contact button{
+    background-color:#D00000;
+    padding:10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all .3s ease;    
+    border:none;
+    font-size: 20px;
+}
+#contact button:hover{
+    background-color: white;
+    color: #D00000;
+}
+#footer{
+    background-color: black;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#footer p{
+    color: white;
+    font-size:25px;
+    font-weight: bolder;
+}
+#footer p span{
+    color: #D00000;
+}
+@media screen and (max-width:768px) {
+    .text-m-right{
+        text-align: right;
+    }
+    .text-m-left{
+        text-align: left;
+    }
+    .text-m-center{
+        text-align: center;
+    }
+}

@@ -1,0 +1,174 @@
+.btn{
+    border-radius: 50px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: all .3s ease!important;
+    transform: translateY(0);
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn-success{
+    background-color: #00ba94;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+#banner .btn-link{
+    color: white;
+    text-decoration: none;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.custom-nav{
+    justify-content: flex-end;
+}
+#banner{
+    padding: 150px 0px;
+    background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8))
+}
+.navbar{
+    background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.navbar-nav .nav-link{
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+}
+.navbar-nav .nav-link.last-before-button{
+    margin-right: 50px!important;
+}
+.navbar-nav .nav-link.btn{
+    color: white;
+}
+#features{
+    padding: 150px 0px;
+}
+#features .feature span.icon{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));
+    color:white;
+    font-size: 40px;
+    display: inline-block;
+}
+#features .feature h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#about{
+    padding: 150px 0px;
+    background-color: #eff3f9;
+}
+#about img{
+    box-shadow: 0 0 25px -10px rgb(129, 129, 129);
+    transform: rotateY(30deg) rotateX(15deg);
+}
+#about h4{
+    font-weight: bold;
+}
+#about .main-parag{
+    margin-bottom:50px
+}
+#about .about-small-item {
+    margin-bottom: 40px;
+}
+#about .about-small-item h6{
+    font-weight: bold;
+    font-size: 16px;
+}
+#about .about-small-item p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#about .about-small-item a{
+    text-decoration: none;
+}
+#about .about-small-item a span{
+    margin-left: 10px;
+}
+#pricing{
+    padding: 150px 0px;
+    background-color: #eff3f9;
+}
+#pricing .pricing-item{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(31 45 65 / 15%);
+    padding: 30px;
+}
+#pricing .pricing-item .badge{
+    margin-bottom: 30px;
+}
+#pricing .pricing-item h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#pricing .pricing-item h2 span{
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+#pricing .pricing-item ul{
+    padding-left: 10px;
+}
+#pricing .pricing-item ul li{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 5px;
+
+}
+#faq{
+    padding: 150px 0px;
+    background-color: #1f2d41;
+}
+#faq p{
+    color: white;
+}
+#faq p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+#faq p:not(:first-child){
+    opacity: .6;   
+}
+#faq .question{
+    margin-bottom: 40px;
+}
+#faq .question span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #00ba94;
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bolder;
+}
+#faq h4{
+    color: white;
+    font-weight: bold;
+}
+#testimonials{
+    padding: 150px 0px;
+}
+#testimonials img{
+    width: 150px;
+}
+#testimonials .side:first-child{
+    border-right: 1px solid gray;
+    background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+}
